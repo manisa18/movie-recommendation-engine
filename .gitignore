@@ -1,3 +1,7 @@
-
+similarity.pkl
 movies.pkl
+<<<<<<< HEAD
 movies_dict.pkl
+=======
+movies_dict.pkl
+>>>>>>> ad1a589 (Enable Git LFS and track similarity.pkl)
