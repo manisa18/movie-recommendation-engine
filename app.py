@@ -1,5 +1,7 @@
 import streamlit as st
-import pickle 
+import bz2
+import pickle
+import _pickle as cPickle
 import pandas as pd
 import requests
 
@@ -38,10 +40,15 @@ def recommend(movie):
 
     return recommended_movies,recommended_movies_poster, recommended_movies_url
 
+def decompress_pickle(file):
+ similarity = bz2.BZ2File(file, 'rb')
+ similarity = cPickle.load(similarity)
+ return similarity
+
 movies_dict = pickle.load(open('movies_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('similarity.pkl','rb'))
+similarity = decompress_pickle('similarity.pbz2') 
 
 
 
