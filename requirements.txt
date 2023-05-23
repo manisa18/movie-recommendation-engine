@@ -5,6 +5,7 @@ attrs==20.3.0
 backcall==0.2.0
 bleach==3.3.0
 blinker==1.6.2
+bz2file==0.98
 cachetools==5.3.0
 certifi==2023.5.7
 cffi==1.14.5
@@ -60,6 +61,8 @@ pyparsing==2.4.7
 pyrsistent==0.17.3
 python-dateutil==2.8.2
 pytz==2023.3
+pywin32==301
+pywinpty==1.0.1
 pyzmq==22.0.3
 qtconsole==5.0.3
 QtPy==1.9.0
